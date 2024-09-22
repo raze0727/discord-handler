@@ -1,5 +1,5 @@
 {
-  "name": "djs-handler",
+  "name": "discord-handler",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
