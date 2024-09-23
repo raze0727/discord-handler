@@ -7,9 +7,8 @@ async function load() {
   await client.login(client.config.token).catch((e) => console.error(e));
 
   //Database
-  if (client.config.uri)
-    connect(client.config.uri, () => console.log('Connected to database'));
-  else console.warn('No URI was provided.');
+  if (config.uri)
+    connect(config.uri).then(console.log('Connected to database'));
 
   //Load Commands
   readdirSync('./commands').forEach((category) => {
