@@ -72,7 +72,7 @@ module.exports = {
 
 - [x] Main Handler
 - [x] Command Cooldown
-- [] Command Permissions
-- [] Owner-Only Commands
-- [] Loggings
-- [] Database
+- [ ] Command Permissions
+- [ ] Owner-Only Commands
+- [ ] Loggings
+- [ ] Database
