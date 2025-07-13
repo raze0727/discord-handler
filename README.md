@@ -1,4 +1,5 @@
 # Discord Handler
+
 A simple discord command handler
 
 ## Table of Contents
@@ -11,11 +12,22 @@ A simple discord command handler
 ## Getting Started
 
 1. Cloning the repository
-   > git clone https://example.com
+
+```sh
+   git clone https://github.com/raze0727/discord-handler.git
+```
+
 2. Navigate into the folder
-   > cd discord-handler
+
+```sh
+   cd discord-handler
+```
+
 3. Installing dependencies
-   > npm install
+
+```sh
+   npm install
+```
 
 ## Configurations
 
