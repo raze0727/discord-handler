@@ -8,6 +8,7 @@ module.exports = {
   name: 'example',
   description: 'Example command.',
   cooldown: 0,
+  ownersOnly: false,
   type: ApplicationCommandType.ChatInput,
   /**
    * @param {Client} client

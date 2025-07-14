@@ -5,6 +5,12 @@ client.on('interactionCreate', async (interaction) => {
   const command = client.commands.get(interaction.commandName);
   if (!command) return;
 
+  if (command.ownersOnly && !client.config.owners.includes(interaction.user.id))
+    return interaction.reply({
+      content: `Invalid permission to run this command.`,
+      flags: MessageFlags.Ephemeral,
+    });
+
   if (command.cooldown && !client.commandCooldowns.has(command.name)) {
     client.commandCooldowns.set(command.name, new Collection());
   }

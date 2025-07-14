@@ -38,7 +38,8 @@ A simple discord command handler
   "client": {
     "token": "", //Bot Token
     "intents": ["Guilds", "MessageContent"] //Bot intents
-  }
+  },
+  "owners": ["1255741620913963019", "ownerID2", ...]
 }
 ```
 
@@ -73,6 +74,6 @@ module.exports = {
 - [x] Main Handler
 - [x] Command Cooldown
 - [ ] Command Permissions
-- [ ] Owner-Only Commands
+- [x] Owner-Only Commands
 - [ ] Loggings
 - [ ] Database

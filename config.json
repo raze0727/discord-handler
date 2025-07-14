@@ -2,5 +2,6 @@
   "client": {
     "token": "",
     "intents": ["Guilds", "MessageContent"]
-  }
+  },
+  "owners": [""]
 }
