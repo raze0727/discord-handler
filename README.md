@@ -77,5 +77,6 @@ module.exports = {
 - [x] Command Cooldown
 - [x] Owner-Only Commands
 - [x] Command Permissions
+- [ ] Role Permissions
 - [ ] Loggings
 - [ ] Database
