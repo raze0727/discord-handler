@@ -5,9 +5,18 @@ client.on('interactionCreate', async (interaction) => {
   const command = client.commands.get(interaction.commandName);
   if (!command) return;
 
+  if (
+    command.permissions &&
+    !interaction.member.permissions.has(command.permissions)
+  )
+    return interaction.reply({
+      content: `You do not have permission to run this command.`,
+      flags: MessageFlags.Ephemeral,
+    });
+
   if (command.ownersOnly && !client.config.owners.includes(interaction.user.id))
     return interaction.reply({
-      content: `Invalid permission to run this command.`,
+      content: `You do not have permission to run this command.`,
       flags: MessageFlags.Ephemeral,
     });
 

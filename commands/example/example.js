@@ -2,6 +2,7 @@ const {
   CommandInteraction,
   Client,
   ApplicationCommandType,
+  PermissionsBitField,
 } = require('discord.js');
 
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
   description: 'Example command.',
   cooldown: 0,
   ownersOnly: false,
+  permissions: [],
   type: ApplicationCommandType.ChatInput,
   /**
    * @param {Client} client

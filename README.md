@@ -4,10 +4,10 @@ A simple discord command handler
 
 ## Table of Contents
 
-1. [Getting Started](#getting-started)
-2. [Configurations](#configurations)
-3. [Example Command File](#example-command-file)
-4. [Roadmap](#roadmap)
+- [Getting Started](#getting-started)
+- [Configurations](#configurations)
+- [Example Command File](#example-command-file)
+- [Roadmap](#roadmap)
 
 ## Getting Started
 
@@ -50,12 +50,14 @@ const {
   CommandInteraction,
   Client,
   ApplicationCommandType,
+  PermissionsBitField,
 } = require('discord.js');
 
 module.exports = {
   name: 'example',
   description: 'Example command.',
   cooldown: 0,
+  permissions: [PermissionsBitField.Flags.SendMessages],
   type: ApplicationCommandType.ChatInput,
   /**
    * @param {Client} client
@@ -73,7 +75,7 @@ module.exports = {
 
 - [x] Main Handler
 - [x] Command Cooldown
-- [ ] Command Permissions
 - [x] Owner-Only Commands
+- [x] Command Permissions
 - [ ] Loggings
 - [ ] Database
